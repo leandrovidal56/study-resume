@@ -8,19 +8,43 @@ vai apagar todos os containers até os que estão rodando
 
 ENTRYPOINT
 sempre fixo
+![alt text](image-1.png)
 
 CMD
 variável que entra como um parâmetro do entrypoint
+![alt text](image.png)
+
+EXPOSE 80
+isso significa que eu estou deixando a porta 80 do meu container exposta
 
 Network
 Para fazer um container se conectar com o outro
-bridger para um container se comunicar com o outro
+bridge para um container se comunicar com o outro
 host mescla a network do docker com a network do host do docker
 overlay para quando tem vários docker em várias redes se conectarem
 maclan para simular uma network conectada na minha rede
 none para não ter nenhuma rede e rodar de forma totalmente isolada
 
+Network Bridge
 docker network inspect bridge = inspecionar a network
+
+docker attach (nomedocontainer)
+ip add show = o próprio ip do container
+ping (ip do outro container)
+
+docker network create --driver brigde nomeDaRede
+docker run -dit --name nomeDoPrimeiroContainer --network nomeDaRede bash
+docker run -dit --name nomeDoSegundoContainer --network nomeDaRede bash
+
+docker exec -it nomeDoPrimeiroContainer bash = entrar dentro do container da network
+
+ping nomeDoSegundoContainer = agora vai encontrar o segundo container
+
+docker network connect nomeDaRede nomeDoTerceiroContainer
+
+Network HOST
+docker run --rm -d --name ngnix --network host ngnix
+
 Bridge
 
 docker ps - verificar quais containers estão ativos
