@@ -8,11 +8,15 @@ vai apagar todos os containers até os que estão rodando
 
 ENTRYPOINT
 sempre fixo
-![alt text](image-1.png)
+![alt text](cmd.png)
 
 CMD
 variável que entra como um parâmetro do entrypoint
-![alt text](image.png)
+Exemplo
+FROM ubuntu:latest
+CMD ["echo", "Hello World!" ]
+
+![alt text](entrypoint.png)
 
 EXPOSE 80
 isso significa que eu estou deixando a porta 80 do meu container exposta
@@ -52,6 +56,8 @@ docker ps -a = verificar todos os containers mesmo que inativos
 -i = modo interativo para manter seu processo rodando e permitir digitação
 -t = desacoplar o terminal do container
 :latest = tag da imagem
+
+![alt text](image-2.png)
 
 docker start + nome do container ou id(completo ou parcial) = rodar o container
 docker stop + nome do container ou id(completo ou parcial) = parar o container
