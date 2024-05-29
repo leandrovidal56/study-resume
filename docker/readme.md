@@ -61,6 +61,13 @@ docker run --rm -d --name ngnix --network host ngnix
 
 ![alt text](php.png)
 
+
+### Otimização de imagem
+
+
+![alt text](optimization.png)
+
+
 ## Comandos gerais de docker
 
 EXPOSE 80
@@ -104,6 +111,12 @@ workdir = diretório que vou trabalhar dentro do container, vai criar a pasta co
 copy = copiar de dentro do meu computador para o docker
 
 expose = exportar a porta do container
+
+dockerize -wait tcp://db:3306 - timeout 50s
+
+o dockerize verifica se determinado container está pronto para receber conexão, e vai ficar esperando ficar pronto e para isso você pode escolher o timeout que ele vai esperar
+
+
 
 ### criando uma imagem
 
