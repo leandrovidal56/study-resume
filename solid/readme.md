@@ -10,10 +10,10 @@ Um classe deve ter apenas uma responsabilidade, a classe deve ter apenas um moti
 de um ela está ferindo o princípio do solid.
 
 **Exemplo de Classe com várias responsabilidades**
-![alt text](many-responsible-class.png)
+![alt text](./assets/many-responsible-class.png)
 
 **Exemplo de Classe com única responsabilidade**
-![alt text](one-responsible-class.png)
+![alt text](./assets/one-responsible-class.png)
 
 ## OCP
 
@@ -24,10 +24,10 @@ incrementar pegar a base e extender em cima dela sem a necessidade de criar algo
 alterar por completo quando precisar incrementar algo.
 
 **Exemplo de Classe fechada para extensão**
-![alt text](closed-extension.png)
+![alt text](./assets/closed-extension.png)
 
 **Exemplo de Classe aberta para extensão**
-![alt text](open-extension.png)
+![alt text](./assets/open-extension.png)
 
 ## LSP
 
@@ -35,7 +35,7 @@ alterar por completo quando precisar incrementar algo.
 As sub classes podem ser substituídas pelas classes pai
 
 **Exemplo de Classe com Liskov Substitution Principle**
-![alt text](liskov-substitution-principle.png)
+![alt text](./assets/liskov-substitution-principle.png)
 
 ## ISP
 
@@ -43,10 +43,10 @@ As sub classes podem ser substituídas pelas classes pai
 Uma classe não é obrigada a implementar métodos que não vai utilizar!
 
 **Exemplo de Classe sem Interface Segregation Principle**
-![alt text](interface-segregation-principle-incorrect.png)
+![alt text](./assets/interface-segregation-principle-incorrect.png)
 
 **Exemplo de Classe com Interface Segregation Principle**
-![alt text](interface-segregation-principle-incorrect.png)
+![alt text](./assets/interface-segregation-principle-incorrect.png)
 
 ## DIP
 
@@ -54,10 +54,10 @@ Uma classe não é obrigada a implementar métodos que não vai utilizar!
 Depender de abstrações e não de implementações, abstrações são modelos básicos para incrementar e implementações são classes concretas.
 
 **Exemplo de Classe dependendo de implementações**
-![alt text](dip-first-problem.png)
+![alt text](./assets/dip-first-problem.png)
 
 **Exemplo de Classe dependendo de implementações**
-![alt text](dip-second-problem.png)
+![alt text](./assets/dip-second-problem.png)
 
 **Exemplo de Classe com abstração**
-![alt text](dip-solution.png)
+![alt text](./assets/dip-solution.png)

@@ -9,7 +9,7 @@ vai apagar todos os containers até os que estão rodando
 ENTRYPOINT
 sempre fixo
 
-![alt text](cmd.png)
+![alt text](./assets/cmd.png)
 
 CMD
 variável que entra como um parâmetro do entrypoint
@@ -17,7 +17,7 @@ Exemplo
 FROM ubuntu:latest
 CMD ["echo", "Hello World!" ]
 
-![alt text](entrypoint.png)
+![alt text](./assets/entrypoint.png)
 
 # Network
 
@@ -59,14 +59,11 @@ docker run --rm -d --name ngnix --network host ngnix
 
 ### Container acessando a máquina
 
-![alt text](php.png)
-
+![alt text](./assets/php.png)
 
 ### Otimização de imagem
 
-
-![alt text](optimization.png)
-
+![alt text](./assets/optimization.png)
 
 ## Comandos gerais de docker
 
@@ -115,8 +112,6 @@ expose = exportar a porta do container
 dockerize -wait tcp://db:3306 - timeout 50s
 
 o dockerize verifica se determinado container está pronto para receber conexão, e vai ficar esperando ficar pronto e para isso você pode escolher o timeout que ele vai esperar
-
-
 
 ### criando uma imagem
 
